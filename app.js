@@ -5,13 +5,7 @@ const port = process.env.PORT || 3001;
 
 
 app.get('/', (req, res) => {
-  res.send('Host : '+req.get('Host'));
-  
-  res.send('@hostname : '+req.hostname);
-  
-  res.send('@ip : '+req.ip);
-  
-  res.send('@referrer : '+req.get('Referrer'));
+  res.send('Host : '+req.get('Host')+' @hostname : '+req.hostname+' @ip : '+req.ip+' @referrer : '+req.get('Referrer'));
 });
 
 
