@@ -5,7 +5,7 @@ const port = process.env.PORT || 3001;
 
 
 app.get('/', (req, res) => {
-  res.send('referrer : '+req.get('Referrer'));
+  res.send('referrer : '+req.get('Host'));
 });
 
 
